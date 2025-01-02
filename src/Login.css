@@ -1,0 +1,126 @@
+/* Main container */
+.maincontainer {
+    background-image: url("C:/GT/Nodejsreactecom/project1ecom/src/image/img2.jpg");
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Inner form container with transparent styling */
+.container {
+    width: 100%;
+    max-width: 500px;
+    color: white;
+    padding: 30px 25px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Optional shadow for text clarity */
+    backdrop-filter: blur(10px); /* Blurs the background behind the form */
+}
+
+/* Form inputs */
+.input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.7); /* Subtle border */
+    background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
+    color: white;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    font-size: 16px;
+    box-sizing: border-box;
+    caret-color: white; /* White cursor for clarity */
+}
+
+.input:focus {
+    outline: none;
+    border-color: #00bfff; /* Highlighted border color */
+}
+
+/* Placeholder styling */
+.input::placeholder {
+    color: white; /* Change placeholder text to white */
+    opacity: 0.7; /* Optional: Adjust the opacity for better readability */
+    font-style: italic; /* Optional: You can style it further with italic or any other font style */
+}
+
+/* Labels */
+label {
+    font-size: 16px;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* Submit button */
+.submitbutton {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.submitbutton button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.submitbutton button:hover {
+    background-color: #0056b3;
+}
+
+/* Error messages */
+.text-danger {
+    font-size: 14px;
+    color: #ff4d4d;
+    text-align: left;
+    margin-top: -10px;
+    margin-bottom: 10px;
+}
+
+/* Link styling */
+.container p a {
+    color: #00bfff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.container p a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+        max-width: 90%;
+    }
+
+    .submitbutton button {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .input {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    label {
+        font-size: 14px;
+    }
+
+    .submitbutton button {
+        font-size: 14px;
+        padding: 8px;
+    }
+}
